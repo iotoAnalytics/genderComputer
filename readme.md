@@ -1,3 +1,7 @@
+# To use with goverlytics_scrapers
+
+Download this repo as a .zip file and copy the folder inside the .zip file into your goverlytics-scrapers/venv/Lib/site-packages directory.
+
 # Gender computer
 
 Gender computer is a Python tool that tries to infer a person's gender from their `name` (mostly first name) and `location` (country). For example, *Andrea* is a first name typically used by men in *Italy* and women in *Germany*, while *Bogdan* is a first name typically used by men irrespective of the country. Similarly, a *Russian* person called *Anna Akhmatova* is more than likely a woman because of the *-ova* suffix.

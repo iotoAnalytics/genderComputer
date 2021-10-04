@@ -21,11 +21,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>."""
 import os
 import re
 import csv
-from dictUtils import MyDict
+from .dictUtils import MyDict
 from unidecode import unidecode
-from nameUtils import only_greek_chars, only_cyrillic_chars
-from nameUtils import leet2eng, inverseNameParts, extractFirstName
-from filters import normaliseCountryName
+from .nameUtils import only_greek_chars, only_cyrillic_chars
+from .nameUtils import leet2eng, inverseNameParts, extractFirstName
+from .filters import normaliseCountryName
 
 
 
@@ -300,7 +300,7 @@ class GenderComputer():
 		for country in self.countryStats.keys():
 			self.countryStats[country] = self.countryStats[country] / total
 		
-		print('Finished initialization')
+		# print('Finished initialization')
 	
 	
 	'''Look <firstName> (and potentially its diminutives) up for <country>.
@@ -680,7 +680,7 @@ class GenderComputer():
 
 def runTests():
 	import os
-	from testSuites import testSuite1, testSuite2
+	from .testSuites import testSuite1, testSuite2
 	
 	dataPath = os.path.abspath(".")
 	gc = GenderComputer(os.path.join(dataPath, 'nameLists'))

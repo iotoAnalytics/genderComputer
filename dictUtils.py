@@ -61,7 +61,7 @@ class MyDict:
 				dict1 = pickle.load(fdict, encoding=encod)
 			else:
 				dict1 = pickle.load(fdict)
-			print("Loaded dictionary from %s" % path)
+			# print("Loaded dictionary from %s" % path)
 			fdict.close()
 			self.data = dict1
 	
